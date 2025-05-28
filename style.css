@@ -58,6 +58,13 @@ box-shadow: #333;
 
 
 }
+.menu__plato{
+  
+  display: inline-flex;  
+  position: relative;
+  left: 400px;
+  
+}
 
 
 .contacto {
@@ -120,7 +127,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    position: relative;
+    margin-bottom: 50px;
     bottom: 0;
     width: 100%;
     box-sizing: auto;
