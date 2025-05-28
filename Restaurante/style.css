@@ -13,18 +13,27 @@ header {
     text-align: center;
 }
 
+
 .navegar {
+    width: 100%;
+    display: flex;
    list-style: none;
     padding: 0;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    flex-direction: row;
+    
 }
 
 .navegar__lista {
     display: inline;
     margin: 0 15px;
+    
 }
 
 .navegar__link {
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
 }
@@ -38,14 +47,6 @@ header {
 
 
 
-.card{
-  width: 400px;
-  margin: 10px auto;
-  padding: 10px;  
-  border: 1px solid gray;
-  box-shadow: 0px 0px 20px gray;
-  border-radius: 5px;
-}
 
 .menu__cards{
 font-family: 'Courier New', Courier, monospace;
@@ -53,10 +54,10 @@ padding: 10px;
 margin: 5px;
 background-color: orange;
 color: white;
+box-shadow: #333;
 
 
 }
-
 
 
 .contacto {
@@ -84,7 +85,35 @@ color: white;
 
 }
 
+.Logo {
+   border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+}
 
+.logo__marca{
+    max-width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .navegar{
+    flex-direction: column;
+    align-items: center
+  }
+  .navegar__lista{
+    margin: 8px 0;
+
+  }
+  } 
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax 200);
+  grid-auto-rows: 250px;
+
+}
 
 footer {
     background-color: grey;
@@ -94,4 +123,5 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    box-sizing: auto;
 }
