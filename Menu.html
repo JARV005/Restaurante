@@ -1,57 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú | Pollos Cotorros</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Pollos Cotorros</h1>
-        <nav >
-            <ul class="navegar">
-                <li class="navegar__lista"><a class="navegar__link" href="index.html">Inicio</a></li>
-                <li class="navegar__lista"><a class="navegar__link" href="Menu.html">Menú</a></li>
-                <li class="navegar__lista"><a class="navegar__link" href="sombre_nos.html">Nosotros</a></li>
-                <li class="navegar__lista"><a class="navegar__link" href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="menu">
-        <h2>Menú</h2>
-        <article class="menu__cards">
-           <figure>
-            <img src="images/mediopollo.jpg" alt="1/2 Pollo Asado con papas" width="300 px">
-           </figure>
-            <div class="menu__plato">
-            <h3>1/2 Pollo</h3>
-            <p>Acompañado de papas.</p>
-            <p>$/ 20.000</p>
-            
-            
+  <header class="encabezado">
+    <h1 class="encabezado__titulo">Pollos Cotorros</h1>
+    <nav>
+        <ul class="navegar">
+            <li class="navegar__lista"><a class="navegar__link" href="index.html">Inicio</a></li>
+            <li class="navegar__lista"><a class="navegar__link" href="Menu.html">Menú</a></li>
+            <li class="navegar__lista"><a class="navegar__link" href="sombre_nos.html">Nosotros</a></li>
+            <li class="navegar__lista"><a class="navegar__link" href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="menu">
+    <h2 class="menu__titulo">Nuestra Carta</h2>
+    <div class="menu__grid">
+      <article class="menu__item">
+        <img class="menu__imagen" src="images/mediopollo.jpg" alt="1/2 Pollo Asado con papas">
+        <div class="menu__contenido">
+          <h3 class="menu__nombre">1/2 Pollo</h3>
+          <p class="menu__descripcion">Acompañado de papas.</p>
+          <p class="menu__precio">$ 20.000</p>
         </div>
-        </article>
-        
-        <section>
-            
-            <article class="menu__cards">
-                <img src="images/pollo.jpg" alt="Pollo Asado con papas" width="300px">
-            <div class="menu__plato">
-            <h3 class="plato__title">Pollo a la brasa</h3>  
-            <p class="plato__content">Jugoso pollo con papas fritas y ensalada.</p>
-            <span>$/ 30.000</span>
+      </article>
+
+      <article class="menu__item">
+        <img class="menu__imagen" src="images/pollo.jpg" alt="Pollo Asado con papas">
+        <div class="menu__contenido">
+          <h3 class="menu__nombre">Pollo a la brasa</h3>
+          <p class="menu__descripcion">Jugoso pollo con papas fritas y ensalada.</p>
+          <p class="menu__precio">$ 30.000</p>
         </div>
-        </article>
-        </section>
-        
-    </section>
-     <footer>
-        <p>&copy; 2025 Pollos Cotorros. Todos los derechos reservados.</p>
-        <p>Instagram:@lospolloscotorros</p>
-        <p>Horario: Lunes a Domingo de 12:00 pm a 10:00 pm</p>
-        <p>Teléfono: (01) 123-4567</p>
-    </footer>
+      </article>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <p class="pie__texto">&copy; 2025 Pollos Cotorros. Todos los derechos reservados.</p>
+    <p class="pie__texto">Instagram: @lospolloscotorros</p>
+    <p class="pie__texto">Horario: Lunes a Domingo de 12:00 pm a 10:00 pm</p>
+    <p class="pie__texto">Teléfono: (01) 123-4567</p>
+  </footer>
 </body>
 </html>
-

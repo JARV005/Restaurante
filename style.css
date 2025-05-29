@@ -14,6 +14,20 @@ header {
 }
 
 
+.encabezado {
+  background-color: #ffee00;
+  color: red;
+  padding: 20px;
+  text-align: center;
+}
+
+.encabezado__titulo {
+  font-size: 2rem;
+}
+
+/* ==== NAVEGACIÓN ==== */
+
+
 .navegar {
     width: 100%;
     display: flex;
@@ -22,7 +36,7 @@ header {
     position: fixed;
     bottom: 0;
     justify-content: center;
-    flex-direction: row;
+    background-color: #ffcc00;
     
 }
 
@@ -43,29 +57,90 @@ header {
 
 }
 
-
-
-
-
-
-.menu__cards{
-font-family: 'Courier New', Courier, monospace;
-padding: 10px;
-margin: 5px;
-background-color: orange;
-color: white;
-box-shadow: #333;
-
-
-}
-.menu__plato{
-  
-  display: inline-flex;  
-  position: relative;
-  left: 400px;
-  
+/* ==== MENÚ ==== */
+.menu {
+  padding: 40px 20px;
 }
 
+.menu__titulo {
+  font-size: 2em;
+  color: #e65100;
+  margin-bottom: 30px;
+}
+
+.menu__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu__item {
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba();
+  transition: transform 0.3s ease;
+}
+
+.menu__item:hover {
+  transform: scale(1.03);
+}
+
+.menu__imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menu__contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.menu__nombre {
+  font-size: 1.3rem;
+}
+
+.menu__descripcion {
+  margin: 10px 0;
+}
+
+.menu__precio {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* ==== PIE DE PÁGINA ==== */
+.pie {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.pie__texto {
+  margin: 5px 0;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .navegacion__lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegacion__item {
+    margin: 10px 0;
+  }
+}
+
+/*Inicio de contacto*/
 
 .contacto {
     padding: 40px 20px;
@@ -103,32 +178,8 @@ box-shadow: #333;
 }
 
 
-@media (max-width: 768px) {
-  .navegar{
-    flex-direction: column;
-    align-items: center
-  }
-  .navegar__lista{
-    margin: 8px 0;
-
-  }
-  } 
 
 
-.grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax 200);
-  grid-auto-rows: 250px;
 
-}
 
-footer {
-    background-color: grey;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 50px;
-    bottom: 0;
-    width: 100%;
-    box-sizing: auto;
-}
+
