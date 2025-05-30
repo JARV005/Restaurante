@@ -64,6 +64,12 @@ header {
   
 }
 
+.menu__categoria{
+border-bottom: 10px;
+  background-color: white ;
+}
+
+
 
 .menu__titulo {
   font-size: 2em;
@@ -73,7 +79,7 @@ header {
 
 .menu__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1;
   gap: 20px;
   max-width: 1000px;
   margin: auto;
@@ -81,13 +87,14 @@ header {
 
 .menu__item {
   width: 60%;
-  margin: 10px 10px auto;
+  margin: 10px 5px 10px;
   background-color: orange;
   color: white;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba();
   transition: transform 0.3s ease;
+  
 }
 
 .menu__item:hover {
